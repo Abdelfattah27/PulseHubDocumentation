@@ -172,4 +172,115 @@ Each view typically includes the following components:
 These admin views are essential for administrators to efficiently manage data within the Collaboration app and ensure that PulseHub's data remains organized and accessible.
 
 
+# Project Preparation Module
 
+The **Project Preparation** Django app is designed to facilitate the management and organization of project preparation activities. It provides a comprehensive set of models to store and track various aspects of project preparation, including proposals, tasks, competencies, and more.
+
+## Key Models
+
+### Provider
+
+- Represents the entity or organization responsible for the Calls.
+
+### ProposalParticipantsPersons
+
+- Records information about individuals Persons in the participant of the proposal.
+
+### TaskParticipantsStatusNotes
+
+- Stores notes and status updates related to task participants.
+
+### TaskParticipants
+
+- Tracks participants involved in specific proposal tasks.
+
+### Task
+
+- Represents individual tasks within a Proposal.
+
+### Competency
+
+- Defines the competencies required for specific proposal.
+
+### Call
+
+- Stores information about calls offer proposals.
+
+### Proposal
+
+- Central model for project preparation, containing core details and references to other related models.
+
+### ProposalParticipants
+
+- Records individuals or entities participating in a proposal.
+
+### OrganizationCompetency
+
+- Manages competency details for organizations involved in the proposal.
+
+### ProposalObjectives
+
+- Captures the objectives of a proposal.
+
+### ProposalImpact
+
+- Tracks the expected impact of a proposal.
+
+### ProposalBudget
+
+- Manages the budgeting aspects of a proposal.
+
+### ProposalOutputs
+
+- Records the expected outputs of a proposal.
+
+### WorkPackage
+
+- Represents work packages within the propsoal.
+
+### Objectives
+
+- Stores objectives related to the workpackage.
+
+### Risk
+
+- Manages risk-related information.
+
+### Milestone
+
+- Records important milestones within the workpackage timeline.
+
+### Deliverable
+
+- Captures details about workpackage deliverables.
+
+### Activity
+
+- Represents activities within the workpackage.
+
+### WorkPackageParticipant
+
+- Manages participants related to work packages (budget of each one).
+
+### ActivityParticipants
+
+- Records participants involved in workpackage activities.
+
+## Functionality
+
+The **Project Preparation** app allows users to:
+
+- Create, view, update, and delete project proposals and associated data.
+- Manage tasks, competencies, calls, and more for efficient project preparation.
+- Assign different access levels to users, granting read-only or full access to proposal data.
+
+## Getting Started
+
+To access and modify data within the **Project Preparation** app, follow these steps:
+
+1. Open the Django admin dashboard.
+2. Navigate to the `admin_views` package.
+3. Locate the relevant model admin file, named `{model_name}_admin.py`.
+4. Make the desired changes to the model data as needed.
+
+With its extensive set of models and user-friendly interface, the **Project Preparation** app simplifies project management and preparation, making it a valuable tool for project teams and organizations.
